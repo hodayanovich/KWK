@@ -87,5 +87,93 @@ else {
 }
 
 //TERMINAL + GIT
-// version control- see changes git- software to look at this code terminal- how to interact with git --> from the terminal- "programming version" of finder.
-//Terminal: cd- to open up desktop dfiles ls- see whats inside of a directory
+//cd DirectoryName: navigating into a directory/folder
+// cd... : go back a folder/directory
+//ls: list everything directory
+//GIT COMMANDS
+//-GIT INIT: creates git project GIT ADD . : stages your work to be committed GIT COMMIT -M  "SOME MESSAGE": commits your work to projects history GIT PUSH: push to Github GIT STATUS: gives info about if you have any changes to add or commit
+
+var gitHub = "rocks"
+if gitHub == "rocks" {
+    print("You did it!")
+}
+else {
+    print("try again!")
+}
+
+//FUNCTIONS- keyword = func, can be complicated so write out in english first and then translate to code!
+
+func walkDog() {
+    print("call dog")
+    print("get leash")
+    print("attach leash")
+    print("exit the house")
+    print("walk dog")
+}
+
+walkDog()
+
+func bowlOfCereal() {
+    print("get a bowl, cereal box and carton of lactaid-all from the machsan")
+    print("go outside to shiur and sit down next to zach")
+    print("fill the bowl with the desired amount of cereal")
+    print("add in milk until the ceral is submerged, but not too much milk, i.e. you want it to look wet but not soggy")
+    print("add a spoon and eat up, shiur and dishes await!!")
+}
+
+bowlOfCereal()
+
+func bakingCookies() {
+    print("make sure your baking gang is present")
+    print("pull out the bachbook")
+    print("take out all the ingredients, a bowl and mixer")
+    print("dump all the ingredients in and mix it all together")
+    print("bake and enjoy!!")
+}
+bakingCookies()
+
+func walkDogX(numberOfDogs : Int) {
+    print("There are \(numberOfDogs) dogs in the house")
+}
+
+walkDogX(numberOfDogs : 4)
+//in a function when you want to make it 2 things use : --> Int, Double, String
+
+func heyTrinity(name : String) {
+    print("Hello, \(name)")
+}
+heyTrinity(name : "Trinity")
+heyTrinity(name : "Daya")
+
+//func funcName(put in a variable that is unknown yet), it has all the all the words and then when you call the function you get to define it and it will be new everytime! #A fancy copy paste that changes one thing everytime.
+func myAge() -> Int {
+    return 17
+}
+//Return stores the information in the function.
+print(myAge() + 10)
+
+func walkDogY(numberOfDogs : Int) -> Int {
+    let lengthOfWalk = numberOfDogs * 15
+    return lengthOfWalk
+}
+
+let minutesToWalk = walkDogY(numberOfDogs : 2)
+print("Please walk the dogs. I will expect to see you complete that task in \(minutesToWalk) minutes!")
+walkDogY(numberOfDogs : 3)
+
+//COLLECTIONS- data type that holds multiple things: Arrays or Dictionaries can leave them empty or fill them in
+//Syntax- var arrayOfStrings = [String]() var arrayofIntegers = [Int]()
+
+var PhatFam = ["Daya", "Rachel", "Eitan", "Gadi", "Zach", "Akiva", "Tzvi", "Adina", "Sarah", "Gabe", "Liviah", "Dovi", "Yonah", "Marisa", "Sarah S", "Julia"]
+//Array- ordered collection of data seperated in commas, each has an index starting at 0.
+print(PhatFam[4])
+PhatFam[15]
+PhatFam[15] = "Don Julio" //Change name
+print(PhatFam[15])
+//add .append to add a person, .remove(at: INDEX #) to remove a person
+
+var theCave = ["Leora", "Mayrav", "Sami", "Adielle", "Daya"]
+print(theCave[1])
+theCave.append("Shir")
+theCave.remove(at:0)
+theCave[3] = "idl.byadielle"
