@@ -114,3 +114,5 @@ var packingList = ["clothing", "toiletries", "food"]
 for index in 0..<packingList.count {
     print("I need to pack " + packingList[index])
 }
+
+
