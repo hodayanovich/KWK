@@ -50,6 +50,6 @@ class Aviatrix {
     }
     
     func knownDestinations() -> [String] {
-        return ["St. Louis", "Phoenix", "Denver","SLC" ]
+        return ["St. Louis", "Phoenix", "Denver","SLC", "Boston", "San Fransisco" ]
     }
 }
