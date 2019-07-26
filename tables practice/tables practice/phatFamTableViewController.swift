@@ -36,7 +36,11 @@ class phatFamTableViewController: UITableViewController {
         positions(id: 5,
                   title: "Misrad",
                   text: "Home of the Hock",
-                  image: "hava&Feef")
+                  image: "hava&Feef"),
+        positions(id: 6,
+                  title: "Chavalim",
+                  text: "Yoter Tov MSports",
+                  image: "jordy")
     ]
 
 
